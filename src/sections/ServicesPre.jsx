@@ -15,21 +15,14 @@ const ServicesPre = () => {
                             className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
                         />
                     </div>
-
-                    {/* Center: 3D Model Evolution */}
-                    <div className="bg-brand-gray p-4 rounded-lg border border-gray-800 h-80 flex items-center justify-center overflow-hidden relative group">
+                    <div className="bg-brand-gray p-4 rounded-lg border border-gray-800 h-80 flex items-center justify-center overflow-hidden">
                         <img
                             src="https://i.postimg.cc/YC0xbB3h/page3-00.png"
                             alt="3D Wireframe"
-                            className="w-full h-full object-cover absolute inset-0 opacity-100 group-hover:opacity-0 transition-opacity duration-500"
+                            className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
                         />
-                        <img
-                            src="https://picsum.photos/400/500?random=32"
-                            alt="3D Clay Render"
-                            className="w-full h-full object-cover absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                        />
-                        <div className="absolute bottom-2 right-2 bg-black/70 px-2 py-1 text-xs rounded">Hover to Evolve</div>
                     </div>
+
 
                     {/* Right: Text Block */}
                     <div className="flex flex-col justify-center h-full pl-4">
