@@ -6,7 +6,7 @@ const Reel = () => {
     const embedUrl = `https://www.youtube.com/embed/${videoId}?si=IaGasuVckO3EIetT&autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&rel=0`;
 
     return (
-        <section id="reel" className="relative w-full h-[100dvh] overflow-hidden bg-black group cursor-pointer">
+        <section id="reel" className="relative w-full h-auto aspect-video bg-black group cursor-pointer">
             {/* Click Overlay */}
             <a
                 href={videoUrl}
@@ -26,7 +26,7 @@ const Reel = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
                     allowFullScreen
-                    className="w-full h-full object-cover scale-150" // Scale up slightly to hide black bars if any, depends on aspect ratio
+                    className="w-full h-full object-cover"
                 ></iframe>
             </div>
 
