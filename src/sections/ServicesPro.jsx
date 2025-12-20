@@ -1,11 +1,33 @@
 import React from 'react';
+import LazyVideo from '../components/LazyVideo';
 
 const ServicesPro = () => {
     const videos = [
-        { id: 'gKGhasyKhbA', title: 'Monstruo verde' },
-        { id: 'zEF02etM52I', title: 'Lobito Camisa Roja' },
-        { id: 'adZ969a-fyk', title: 'Lobita buzo blanco' },
-        { id: 'B3lqoVDA8r0', title: 'Barco', isWide: true },
+        {
+            id: 'monstruo',
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/render-base-mosnter.mp4',
+            poster: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillMonster.png',
+            title: 'Monstruo verde'
+        },
+        {
+            id: 'lobito',
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/render-base-lobito%202.mp4',
+            poster: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillLobito.png',
+            title: 'Lobito Camisa Roja'
+        },
+        {
+            id: 'lobita',
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/render-base-lobito%203.mp4',
+            poster: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillLobita.png',
+            title: 'Lobita buzo blanco'
+        },
+        {
+            id: 'barco',
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/SegmentoRigging.mp4',
+            poster: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillRigging.png',
+            title: 'Barco',
+            isWide: true
+        },
     ];
 
     return (
@@ -23,14 +45,12 @@ const ServicesPro = () => {
                             {/* Transparent overlay to prevent interaction */}
                             <div className="absolute inset-0 z-20 bg-transparent"></div>
 
-                            <iframe
-                                className="absolute inset-0 w-full h-full scale-[1] pointer-events-none"
-                                src={`https://www.youtube.com/embed/${video.id}?autoplay=1&mute=1&controls=0&loop=1&playlist=${video.id}&showinfo=0&modestbranding=1&disablekb=1&fs=0&rel=0&vq=highres&quality=hd1080`}
-                                title={video.title}
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
+                            <LazyVideo
+                                src={video.src}
+                                poster={video.poster}
+                                alt={video.title}
+                                className="absolute inset-0 w-full h-full"
+                            />
                         </div>
                     ))}
                 </div>

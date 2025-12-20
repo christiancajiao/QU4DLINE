@@ -1,9 +1,18 @@
 import React from 'react';
+import LazyVideo from '../components/LazyVideo';
 
 const OriginalProjectPart2 = () => {
     const videos = [
-        { id: 'fONqyuF_dXQ', title: 'Kheper Video 1' },
-        { id: 'Y0DJYfFaxWA', title: 'Kheper Video 2' },
+        {
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/walkcyclesquare.mp4',
+            poster: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillKheperWalk.png',
+            title: 'Kheper Walk Cycle'
+        },
+        {
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Kheper360_030001-0250.mp4',
+            poster: "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillKheperAround.png",
+            title: 'Kheper 360 Turn'
+        }
     ];
 
     const images = [
@@ -51,30 +60,28 @@ const OriginalProjectPart2 = () => {
                         </div>
                     </div>
 
-                    {/* 3. Video 2 (Center-Right) - Gray Background */}
+                    {/* 3. Video 2 (Center-Right) - Middle Video (Turn) */}
                     <div className="relative aspect-[9/16] overflow-hidden rounded-lg border border-gray-800 bg-black group">
                         <div className="absolute inset-0 z-20 bg-transparent"></div>
-                        <iframe
-                            className="absolute inset-0 w-full h-full scale-[2.5] pointer-events-none"
-                            src={`https://www.youtube.com/embed/${videos[1].id}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videos[1].id}&showinfo=0&modestbranding=1&disablekb=1&fs=0&rel=0&vq=hd1080&playsinline=1`}
-                            title={videos[1].title}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
+                        <LazyVideo
+                            src={videos[1].src}
+                            poster={videos[1].poster}
+                            alt={videos[1].title}
+                            className="absolute inset-0 w-full h-full"
+                            objectFit="cover"
+                        />
                     </div>
 
-                    {/* 4. Video 1 (Right) - Orange Background */}
+                    {/* 4. Video 1 (Right) - Walk Cycle */}
                     <div className="relative aspect-[9/16] overflow-hidden rounded-lg border border-gray-800 bg-black group">
                         <div className="absolute inset-0 z-20 bg-transparent"></div>
-                        <iframe
-                            className="absolute inset-0 w-full h-full scale-[1.35] pointer-events-none"
-                            src={`https://www.youtube.com/embed/${videos[0].id}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videos[0].id}&showinfo=0&modestbranding=1&disablekb=1&fs=0&rel=0&vq=hd1080&playsinline=1`}
-                            title={videos[0].title}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
+                        <LazyVideo
+                            src={videos[0].src}
+                            poster={videos[0].poster}
+                            alt={videos[0].title}
+                            className="absolute inset-0 w-full h-full"
+                            objectFit="cover"
+                        />
                     </div>
 
                 </div>

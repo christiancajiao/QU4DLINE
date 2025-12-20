@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyVideo from '../components/LazyVideo';
 
 const Reel = () => {
     const videoId = "1147655572";
@@ -8,7 +9,7 @@ const Reel = () => {
     return (
         <section id="reel" className="w-full bg-black">
             {/* Video Container */}
-            <div className="relative w-full aspect-video group cursor-pointer">
+            <div className="relative w-full h-screen md:h-auto md:aspect-video group cursor-pointer">
                 {/* Click Overlay */}
                 <a
                     href={videoUrl}
@@ -20,17 +21,13 @@ const Reel = () => {
                 </a>
 
                 {/* Video Background */}
-                <div className="absolute inset-0 w-full h-full pointer-events-none">
-                    <iframe
-                        src={embedUrl}
-                        title="Q4Dline Reel"
-                        frameBorder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                        className="w-full h-full object-cover"
-                    ></iframe>
-                </div>
+                <LazyVideo
+                    src="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReelNuevoStudio_06.mp4"
+                    poster="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReelStill.png"
+                    alt="Q4Dline Reel"
+                    className="absolute inset-0 w-full h-full"
+                    objectFit="cover"
+                />
 
                 {/* Optional Overlay Gradient/Logo */}
                 <div className="absolute inset-0 bg-black/10 pointer-events-none z-10 transition-colors group-hover:bg-black/20"></div>

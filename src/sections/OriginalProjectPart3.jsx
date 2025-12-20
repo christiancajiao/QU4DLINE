@@ -1,9 +1,18 @@
 import React from 'react';
+import LazyVideo from '../components/LazyVideo';
 
 const OriginalProjectPart3 = () => {
     const videos = [
-        { id: 'Y1ImLx9JKAo', title: 'Kheper Vertical Short', isVertical: true },
-        { id: '7vYnsjGX-iM', title: 'Kheper Horizontal Video', isVertical: false },
+        {
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/progressShot010.mp4',
+            poster: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillKheperCompo.png',
+            title: 'Kheper Vertical Progress'
+        },
+        {
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Animation%20pass%2001.mp4',
+            poster: undefined, // No still provided
+            title: 'Kheper Horizontal Animation Pass'
+        }
     ];
 
     return (
@@ -15,27 +24,25 @@ const OriginalProjectPart3 = () => {
                     {/* Video 1: Vertical */}
                     <div className="relative w-full max-w-sm mx-auto aspect-[9/16] overflow-hidden rounded-lg border border-gray-800 bg-black group">
                         <div className="absolute inset-0 z-20 bg-transparent"></div>
-                        <iframe
-                            className="absolute inset-0 w-full h-full scale-[1.35] pointer-events-none"
-                            src={`https://www.youtube.com/embed/${videos[0].id}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videos[0].id}&showinfo=0&modestbranding=1&disablekb=1&fs=0&rel=0&vq=hd1080`}
-                            title={videos[0].title}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
+                        <LazyVideo
+                            src={videos[0].src}
+                            poster={videos[0].poster}
+                            alt={videos[0].title}
+                            className="absolute inset-0 w-full h-full"
+                            objectFit="contain"
+                        />
                     </div>
 
                     {/* Video 2: Horizontal */}
                     <div className="relative w-full aspect-video overflow-hidden rounded-lg border border-gray-800 bg-black group">
                         <div className="absolute inset-0 z-20 bg-transparent"></div>
-                        <iframe
-                            className="absolute inset-0 w-full h-full scale-[1.35] pointer-events-none"
-                            src={`https://www.youtube.com/embed/${videos[1].id}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videos[1].id}&showinfo=0&modestbranding=1&disablekb=1&fs=0&rel=0&vq=hd1080`}
-                            title={videos[1].title}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
+                        <LazyVideo
+                            src={videos[1].src}
+                            poster={videos[1].poster}
+                            alt={videos[1].title}
+                            className="absolute inset-0 w-full h-full"
+                            objectFit="contain"
+                        />
                     </div>
 
                 </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyVideo from '../components/LazyVideo';
 
 const ServicesPost = () => {
     return (
@@ -20,15 +21,13 @@ const ServicesPost = () => {
 
                     {/* 2. Wireframe Scene (Top Center) */}
                     <div className="bg-brand-dark rounded-lg overflow-hidden border border-gray-800 relative group">
-                        <iframe
-                            className="absolute inset-0 w-full h-full scale-[1.35] pointer-events-none"
-                            src="https://www.youtube.com/embed/Qg85-s9KONA?autoplay=1&mute=1&controls=0&loop=1&playlist=Qg85-s9KONA&vq=hd1080&playsinline=1"
-                            title="Wireframe Pass"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
-                        <div className="absolute bottom-2 left-2 bg-black/70 px-2 py-1 text-xs rounded text-white">Wireframe Pass</div>
+                        <LazyVideo
+                            src="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/compo_breakDown_02_heavy.mp4"
+                            poster="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillCompo.png"
+                            alt="Wireframe Pass"
+                            className="absolute inset-0 w-full h-full"
+                        />
+                        <div className="absolute bottom-2 left-2 bg-black/70 px-2 py-1 text-xs rounded text-white z-10">Wireframe Pass</div>
                     </div>
 
                     {/* 3. Final Render (Right Column - Spans 2 Rows) */}
