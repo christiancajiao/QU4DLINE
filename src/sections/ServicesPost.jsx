@@ -20,7 +20,7 @@ const ServicesPost = () => {
                     </div>
 
                     {/* 2. Wireframe Scene (Top Center) */}
-                    <div className="bg-brand-dark rounded-lg overflow-hidden border border-gray-800 relative group">
+                    <div className="bg-brand-dark rounded-lg overflow-hidden border border-gray-800 relative group h-64 lg:h-auto">
                         <LazyVideo
                             src="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Compo%20Breakdown%2002small.mp4"
                             poster="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillCompo.png"
