@@ -15,19 +15,18 @@ const Reel = () => {
                     href={videoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="absolute inset-0 z-20 w-full h-full"
+                    className="w-full h-full"
                     aria-label="Watch full video on Vimeo"
                 >
+                    {/* Video Background */}
+                    <LazyVideo
+                        src="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Reelnuevostudio%2007.mp4"
+                        poster="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReelStill.png"
+                        alt="Q4Dline Reel"
+                        className="absolute inset-0 w-full h-full"
+                        objectFit="cover"
+                    />
                 </a>
-
-                {/* Video Background */}
-                <LazyVideo
-                    src="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Reelnuevostudio%2007.mp4"
-                    poster="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReelStill.png"
-                    alt="Q4Dline Reel"
-                    className="absolute inset-0 w-full h-full"
-                    objectFit="cover"
-                />
 
                 {/* Optional Overlay Gradient/Logo */}
                 <div className="absolute inset-0 bg-black/10 pointer-events-none z-10 transition-colors group-hover:bg-black/20"></div>
