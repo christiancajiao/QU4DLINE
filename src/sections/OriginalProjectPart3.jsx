@@ -4,12 +4,12 @@ import LazyVideo from '../components/LazyVideo';
 const OriginalProjectPart3 = () => {
     const videos = [
         {
-            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/progressShot010.mp4',
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Progressshot010_small.mp4',
             poster: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillKheperCompo.png',
             title: 'Kheper Vertical Progress'
         },
         {
-            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Animation%20pass%2001.mp4',
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Animation%20Pass%2001%20small.mp4',
             poster: undefined, // No still provided
             title: 'Kheper Horizontal Animation Pass'
         }

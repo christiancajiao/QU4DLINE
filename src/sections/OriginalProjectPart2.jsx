@@ -4,12 +4,12 @@ import LazyVideo from '../components/LazyVideo';
 const OriginalProjectPart2 = () => {
     const videos = [
         {
-            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/walkcycle.mp4',
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/WalkcycleSmall.mp4',
             poster: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillWalkcycle2.png',
             title: 'Kheper Walk Cycle'
         },
         {
-            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Kheper360_030001-0250.mp4',
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Kheper_small.mp4',
             poster: "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillKheperAround.png",
             title: 'Kheper 360 Turn'
         }

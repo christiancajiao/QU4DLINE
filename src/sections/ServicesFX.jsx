@@ -9,12 +9,12 @@ const ServicesFX = () => {
             title: 'Services FX Video 1'
         },
         {
-            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/PUBLI%20B1.mp4',
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Publi%20B1%20Small.mp4',
             poster: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillPubli.png',
             title: 'Services FX Video 2'
         },
         {
-            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/TOREM%203.mp4',
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Torem%203%20Small.mp4',
             poster: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillTorem.png',
             title: 'Services FX Video 3'
         }

@@ -22,7 +22,7 @@ const ServicesPost = () => {
                     {/* 2. Wireframe Scene (Top Center) */}
                     <div className="bg-brand-dark rounded-lg overflow-hidden border border-gray-800 relative group">
                         <LazyVideo
-                            src="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/compo_breakDown_02_heavy.mp4"
+                            src="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Compo%20Breakdown%2002small.mp4"
                             poster="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillCompo.png"
                             alt="Wireframe Pass"
                             className="absolute inset-0 w-full h-full"

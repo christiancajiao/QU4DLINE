@@ -23,7 +23,7 @@ const ServicesPro = () => {
         },
         {
             id: 'barco',
-            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/SegmentoRigging.mp4',
+            src: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/SegmentoriggingSmall.mp4',
             poster: 'https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/stillRigging.png',
             title: 'Barco',
             isWide: true

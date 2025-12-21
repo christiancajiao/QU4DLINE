@@ -22,7 +22,7 @@ const Reel = () => {
 
                 {/* Video Background */}
                 <LazyVideo
-                    src="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReelNuevoStudio_06.mp4"
+                    src="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Reelnuevostudio%2007.mp4"
                     poster="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReelStill.png"
                     alt="Q4Dline Reel"
                     className="absolute inset-0 w-full h-full"
