@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaVimeoV, FaYoutube } from "react-icons/fa";
 import LazyVideo from '../components/LazyVideo';
 
 const Reel = () => {
@@ -30,25 +31,16 @@ const Reel = () => {
     return (
         <section id="reel" className="w-full bg-black">
             {/* Video Container */}
-            <div className="relative w-full h-screen md:h-auto md:aspect-video group cursor-pointer">
-                {/* Click Overlay */}
-                <a
-                    href={videoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full h-full"
-                    aria-label="Watch full video on Vimeo"
-                >
-                    {/* Video Background */}
-                    <LazyVideo
-                        key={isMobile ? 'mobile' : 'desktop'}
-                        src={videoSrc}
-                        poster={posterSrc}
-                        alt="Q4Dline Reel"
-                        className="absolute inset-0 w-full h-full"
-                        objectFit={isMobile ? "contain" : "cover"}
-                    />
-                </a>
+            <div className="relative w-full h-screen md:h-auto md:aspect-video group">
+                {/* Video Background */}
+                <LazyVideo
+                    key={isMobile ? 'mobile' : 'desktop'}
+                    src={videoSrc}
+                    poster={posterSrc}
+                    alt="Q4Dline Reel"
+                    className="absolute inset-0 w-full h-full"
+                    objectFit={isMobile ? "contain" : "cover"}
+                />
 
                 {/* Optional Overlay Gradient/Logo */}
                 <div className="absolute inset-0 bg-black/10 pointer-events-none z-10 transition-colors group-hover:bg-black/20"></div>
@@ -57,9 +49,31 @@ const Reel = () => {
             {/* Disclaimer Text */}
             <div className="container mx-auto px-6 py-8">
                 <div className="bg-brand-gray border border-gray-700 p-8 rounded-lg flex flex-col items-center justify-center">
-                    <p className="text-gray-300 text-sm md:text-base max-w-4xl mx-auto leading-relaxed text-center">
+                    <p className="text-gray-300 text-sm md:text-base max-w-4xl mx-auto leading-relaxed text-center mb-6">
                         The selection of these shots is part of the personal reels of Juan José Vélez and Darshi Velasco, who have worked for various international studios and brands. Only the character animation featured here was created by our team.
                     </p>
+
+                    {/* Social Links */}
+                    <div className="flex items-center justify-center gap-6">
+                        <a
+                            href="https://vimeo.com/1147655572"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-[#1AB7EA] transition-colors duration-300"
+                            aria-label="Watch on Vimeo"
+                        >
+                            <FaVimeoV size={24} />
+                        </a>
+                        <a
+                            href="https://youtu.be/dUeJa52r-s0"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-[#FF0000] transition-colors duration-300"
+                            aria-label="Watch on YouTube"
+                        >
+                            <FaYoutube size={28} />
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
