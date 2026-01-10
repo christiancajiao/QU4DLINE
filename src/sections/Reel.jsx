@@ -21,8 +21,8 @@ const Reel = () => {
     }, []);
 
     const videoSrc = isMobile
-        ? "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReeNuevoStudiol%2B08_vertical.mp4"
-        : "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Reelnuevostudio%2007.mp4";
+        ? "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Reenuevostudiol%2B09%20Vertical_.mp4"
+        : "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReelNuevoStudio_07.mp4";
 
     const posterSrc = isMobile
         ? "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/reelStillVertical.png"
@@ -56,7 +56,7 @@ const Reel = () => {
                     {/* Social Links */}
                     <div className="flex items-center justify-center gap-6">
                         <a
-                            href="https://vimeo.com/1147655572"
+                            href="https://vimeo.com/1152381156?share=copy&fl=sv&fe=ci"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-400 hover:text-[#1AB7EA] transition-colors duration-300"
@@ -65,7 +65,7 @@ const Reel = () => {
                             <FaVimeoV size={24} />
                         </a>
                         <a
-                            href="https://youtu.be/dUeJa52r-s0"
+                            href="https://youtu.be/6owOvr98-eA"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-400 hover:text-[#FF0000] transition-colors duration-300"
